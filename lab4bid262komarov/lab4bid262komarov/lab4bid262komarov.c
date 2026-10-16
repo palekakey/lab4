@@ -13,6 +13,7 @@ int task1() {
 	printf("i = %d\n", i);
 	printf("f = %.2f\n", f);
 	printf("d = %.12f\n", d);
+
 	printf("Введите новый символ для c: \n");
 	scanf("%c", &c);
 
@@ -29,6 +30,21 @@ int task1() {
 	printf("i = %d\n", i);
 	printf("f = %.2f\n", f);
 	printf("d = %.12f\n", d);
+
+	//1a:
+	int it = (int)f;
+	float ft = f - it;
+	printf("Целая часть f: %d\n", it);
+	printf("Дробная часть f: %f\n", ft);
+
+	//1б:
+	printf("Символ: %c\n", c);
+	printf("Шестнадцатеричный код: 0x%X\n", c);
+	printf("Десятичный код: %d\n", c);
+
+	//1в:
+	printf("Результат 1/%d = %.1f\n", i, 1.0 / i);
+
 
 	return 0;
 }
